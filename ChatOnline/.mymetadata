@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ChatOnline"
+  id="myeclipse.1476932125720"
+  context-root="/ChatOnline"
+  j2ee-spec="5.0"
+  archive="ChatOnline.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
