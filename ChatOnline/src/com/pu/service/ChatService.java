@@ -79,7 +79,27 @@ public class ChatService {
 	//获取系统中的所有聊天信息
 	public String getMsg(){
 		
+		if(chatMsg==null){
+			chatMsg=new LinkedList<String>();
+			return " ";
+		}
+		StringBuilder result=new  StringBuilder();
+		for(String line:chatMsg){
+			result.append(line+"\n");
+		}
+		
+		return result.toString();
+		
 		
 	}
-
+//用户发言，添加聊天信息
+	public void addMsg(String user,String msg){
+		if(chatMsg==null){
+			chatMsg=new LinkedList<String>();
+		}
+		if(chatMsg.size()>40){
+			chatMsg.removeFirst();
+		}
+		chatMsg.add(user+"说"+msg);
+	}
 }
