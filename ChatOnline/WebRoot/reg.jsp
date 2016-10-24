@@ -21,7 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <form name="form1" method="post" action="/reg.do">
+    <form name="form1" method="post" action="reg.do">
     <span style="color:red">
 ${requestScope.tip}
 </span>

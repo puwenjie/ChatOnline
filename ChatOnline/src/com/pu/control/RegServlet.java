@@ -10,7 +10,7 @@ import javax.servlet.*;
 
 import com.pu.service.ChatService;
 
-@WebServlet(urlPatterns = {"/reg.do" })
+@WebServlet("/reg.do")
 // ×¢²áµÄ¿ØÖÆÆ÷
 public class RegServlet extends HttpServlet {
 	public void service(HttpServletRequest request, HttpServletResponse response)
